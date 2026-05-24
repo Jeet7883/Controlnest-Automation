@@ -1,64 +1,181 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ControlNest Automation</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <style>
+
 body{
-font-family:Arial,sans-serif;
 margin:0;
-text-align:center;
+font-family:Arial,sans-serif;
+line-height:1.6;
 }
-.header{
-background:#0d47a1;
+
+header{
+background:#0b2341;
 color:white;
-padding:50px 20px;
+text-align:center;
+padding:40px;
 }
+
+header img{
+max-width:250px;
+}
+
+.hero{
+padding:50px;
+text-align:center;
+background:#f4f4f4;
+}
+
+.hero h1{
+color:#0b2341;
+}
+
 .btn{
-background:#ff6600;
+background:#ff6b00;
 color:white;
 padding:12px 25px;
 text-decoration:none;
 border-radius:5px;
 }
-.section{
-padding:40px 20px;
+
+section{
+padding:50px 10%;
 }
-.footer{
-background:#222;
-color:white;
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:white;
 padding:20px;
+box-shadow:0 0 10px rgba(0,0,0,.1);
+border-radius:10px;
 }
+
+footer{
+background:#0b2341;
+color:white;
+padding:30px;
+text-align:center;
+}
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px;
+border-radius:50%;
+text-decoration:none;
+font-size:24px;
+}
+
 </style>
 </head>
+
 <body>
 
-<div class="header">
+<header>
+<img src="logo.jpg">
 <h1>CONTROLNEST AUTOMATION</h1>
-<p>PLC | HMI | SCADA | VFD | Servo Drive</p>
+<p>Automate | Innovate | Elevate</p>
+</header>
+
+<div class="hero">
+<h1>Engineering Intelligent Automation for Modern Industries</h1>
+<p>PLC | SCADA | HMI | VFD | Servo Drives | Process Instrumentation</p>
+<br>
 <a class="btn" href="tel:9650389001">Call Now</a>
 </div>
 
-<div class="section">
+<section>
 <h2>Our Services</h2>
-<p>PLC Programming</p>
-<p>SCADA Development</p>
-<p>HMI Design</p>
-<p>VFD Commissioning</p>
-<p>Process Instrumentation</p>
-<p>Pneumatic Panel Designing</p>
+
+<div class="services">
+
+<div class="card">
+<h3>PLC Programming</h3>
+<p>System integration, commissioning and troubleshooting.</p>
 </div>
 
-<div class="section">
+<div class="card">
+<h3>SCADA & HMI</h3>
+<p>Monitoring, alarming, trends and reporting solutions.</p>
+</div>
+
+<div class="card">
+<h3>Electrical Panels</h3>
+<p>PLC, MCC, PCC, APFC and VFD panels.</p>
+</div>
+
+<div class="card">
+<h3>Instrumentation</h3>
+<p>Flow, pressure, level and temperature solutions.</p>
+</div>
+
+<div class="card">
+<h3>Industrial IoT</h3>
+<p>Smart factory and remote monitoring systems.</p>
+</div>
+
+<div class="card">
+<h3>Technical Consultancy</h3>
+<p>Automation engineering and support services.</p>
+</div>
+
+</div>
+
+</section>
+
+<section style="background:#f5f5f5;">
+<h2>Industries We Serve</h2>
+
+<ul>
+<li>Food & Beverage</li>
+<li>Pharmaceutical</li>
+<li>Oil & Gas</li>
+<li>Dairy Industry</li>
+<li>Chemical Plants</li>
+<li>Water Treatment</li>
+<li>Power & Energy</li>
+<li>Packaging Systems</li>
+</ul>
+
+</section>
+
+<section>
+
 <h2>Contact Us</h2>
-<p>Mobile: 9650389001</p>
-<p>GSTIN: 06KNUPS2346C1ZJ</p>
-<p>Faridabad, Haryana</p>
-</div>
 
-<div class="footer">
-© ControlNest Automation
-</div>
+<p><b>P.S. Chauhan</b></p>
+<p>Mobile: +91 9650389001</p>
+<p>GSTIN: 06KNUPS2346C1ZJ</p>
+
+<p>
+H.No.35, Gali No.5,
+Sant Surdas Nagar,
+Mirzapur Sector-74,
+Faridabad, Haryana - 121004
+</p>
+
+</section>
+
+<footer>
+© 2026 ControlNest Automation
+</footer>
+
+<a class="whatsapp"
+href="https://wa.me/919650389001">
+📞
+</a>
 
 </body>
 </html>
