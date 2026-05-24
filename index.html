@@ -1,78 +1,66 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>ControlNest Automation | PLC | SCADA | HMI | Industrial Automation</title>
-
-<meta name="description" content="ControlNest Automation provides PLC Programming, SCADA Development, HMI Development, VFD Commissioning, Process Instrumentation and Smart Factory Solutions.">
-
-<style>
-
-*{
+body{
 margin:0;
 padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif;
-}
-
-body{
-background:#f8f9fb;
+font-family:'Segoe UI',sans-serif;
+background:#f5f7fa;
 color:#222;
 }
 
-header{
-background:linear-gradient(135deg,#0b2341,#123d6b);
+nav{
+background:#081b33;
+padding:15px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:sticky;
+top:0;
+z-index:999;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+font-weight:600;
+}
+
+.hero{
+background:linear-gradient(rgba(8,27,51,.85),rgba(8,27,51,.85)),
+url('https://images.unsplash.com/photo-1565008447742-97f6f38c985c?q=80&w=1600');
+background-size:cover;
+background-position:center;
 color:white;
 text-align:center;
-padding:70px 20px;
+padding:120px 20px;
 }
 
-header img{
-max-width:260px;
-width:100%;
-margin-bottom:20px;
+.hero h1{
+font-size:52px;
+margin-bottom:15px;
 }
 
-header h1{
-font-size:48px;
-margin-bottom:10px;
-}
-
-header p{
+.hero p{
 font-size:20px;
-margin-bottom:25px;
+max-width:900px;
+margin:auto;
 }
 
 .btn{
-background:#ff7a00;
+background:#ff7b00;
+padding:14px 30px;
+display:inline-block;
+margin-top:25px;
 color:white;
-padding:14px 35px;
 text-decoration:none;
 border-radius:6px;
-display:inline-block;
 font-weight:bold;
 }
 
-section{
-padding:70px 10%;
+.section{
+padding:70px 8%;
 }
 
-.section-title{
-text-align:center;
-margin-bottom:40px;
-color:#0b2341;
-font-size:36px;
-}
-
-.about{
-text-align:center;
-font-size:18px;
-line-height:1.8;
-}
-
-.cards{
+.grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:25px;
@@ -82,225 +70,144 @@ gap:25px;
 background:white;
 padding:25px;
 border-radius:12px;
-box-shadow:0 2px 15px rgba(0,0,0,0.08);
-transition:0.3s;
+box-shadow:0 4px 18px rgba(0,0,0,.08);
 }
 
-.card:hover{
-transform:translateY(-5px);
-}
-
-.card h3{
-color:#0b2341;
-margin-bottom:15px;
-}
-
-.dark{
-background:#0b2341;
+.counter{
+background:#081b33;
 color:white;
-}
-
-.dark .section-title{
-color:white;
-}
-
-ul{
-line-height:2;
-font-size:18px;
-}
-
-.contact{
 text-align:center;
-line-height:2;
-font-size:18px;
+padding:50px 20px;
 }
 
 footer{
-background:#071729;
+background:#081b33;
 color:white;
 text-align:center;
-padding:25px;
+padding:30px;
 }
-
-.whatsapp{
-position:fixed;
-right:20px;
-bottom:20px;
-background:#25D366;
-color:white;
-padding:18px;
-border-radius:50%;
-font-size:30px;
-text-decoration:none;
-z-index:9999;
-}
-
-</style>
-</head>
-
-<body>
-
-<header>
-
-<img src="logo.jpeg" alt="ControlNest Automation">
-
-<h1>CONTROLNEST AUTOMATION</h1>
-
-<p>Automate | Innovate | Elevate</p>
-
-<p>
-Engineering Intelligent Automation for Modern Industries
-</p>
-
-<a class="btn" href="tel:9650389001">Call Now</a>
-
-</header>
-
-<section>
-
-<h2 class="section-title">About Us</h2>
-
-<div class="about">
-
-<p>
-ControlNest Automation is a leading Industrial Automation and Process Instrumentation company delivering intelligent, reliable and future-ready engineering solutions.
-</p>
-
-<br>
-
-<p>
-We specialize in PLC Programming, SCADA Development, HMI Development, Electrical Control Panels, Process Instrumentation, Industrial Networking, Industrial IoT and Smart Factory Automation.
-</p>
-
+<nav>
+<div><b>CONTROLNEST AUTOMATION</b></div>
+<div>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#industries">Industries</a>
+<a href="#contact">Contact</a>
 </div>
+</nav>
 
+<section class="hero">
+<img src="logo.jpeg" style="max-width:300px;">
+<h1>Engineering Intelligent Automation for Modern Industries</h1>
+<p>
+PLC Programming | SCADA Development | HMI | Process Instrumentation |
+Industrial IoT | Smart Factory Solutions
+</p>
+<a class="btn" href="tel:9650389001">Call Now</a>
 </section>
 
-<section>
+<section id="about" class="section">
+<h2>About Us</h2>
+<p>
+ControlNest Automation delivers intelligent, reliable and future-ready
+industrial automation solutions including PLC, SCADA, HMI,
+Electrical Panels, Process Instrumentation and Smart Factory Systems.
+</p>
+</section>
 
-<h2 class="section-title">Our Services</h2>
-
-<div class="cards">
+<section id="services" class="section">
+<h2>Our Services</h2>
+<div class="grid">
 
 <div class="card">
 <h3>PLC Programming</h3>
-<p>PLC logic development, machine automation, troubleshooting and commissioning.</p>
+<p>Logic development, commissioning and troubleshooting.</p>
 </div>
 
 <div class="card">
 <h3>SCADA Development</h3>
-<p>Real-time monitoring, reporting, alarms and centralized plant control.</p>
+<p>Monitoring, alarms, reporting and plant visualization.</p>
 </div>
 
 <div class="card">
 <h3>HMI Development</h3>
-<p>User-friendly operator interfaces and machine visualization systems.</p>
+<p>Modern operator interface development.</p>
 </div>
 
 <div class="card">
-<h3>Electrical Control Panels</h3>
-<p>PLC Panels, MCC, PCC, APFC, VFD and custom automation panels.</p>
+<h3>Electrical Panels</h3>
+<p>MCC, PCC, PLC, APFC and VFD Panels.</p>
 </div>
 
 <div class="card">
-<h3>Process Instrumentation</h3>
-<p>Flow, Pressure, Temperature and Level Instrument Solutions.</p>
+<h3>Instrumentation</h3>
+<p>Flow, Pressure, Temperature and Level solutions.</p>
 </div>
 
 <div class="card">
 <h3>Industrial IoT</h3>
-<p>Remote monitoring, cloud connectivity and smart factory automation.</p>
+<p>Smart Factory and Remote Monitoring Solutions.</p>
 </div>
 
 </div>
-
 </section>
 
-<section class="dark">
+<section class="counter">
+<h2>Trusted Industrial Automation Partner</h2>
+<p>Automation • Instrumentation • Smart Factory Solutions</p>
+</section>
 
-<h2 class="section-title">Industries We Serve</h2>
+<section id="industries" class="section">
+<h2>Industries We Serve</h2>
 
-<div class="cards">
-
-<div class="card">Food & Beverage Industry</div>
-<div class="card">Dairy & Milk Processing Plants</div>
-<div class="card">Pharmaceutical Industry</div>
-<div class="card">Oil & Gas Industry</div>
-<div class="card">Chemical & Process Plants</div>
-<div class="card">Water Treatment Plants</div>
-<div class="card">Power & Energy Sector</div>
+<div class="grid">
+<div class="card">Food & Beverage</div>
+<div class="card">Pharmaceutical</div>
+<div class="card">Oil & Gas</div>
+<div class="card">Chemical Plants</div>
+<div class="card">Water Treatment</div>
+<div class="card">Power & Energy</div>
+<div class="card">Dairy Industry</div>
 <div class="card">Packaging Systems</div>
-
 </div>
 
 </section>
 
-<section>
+<section class="section">
+<h2>Technology Partners</h2>
 
-<h2 class="section-title">Technology Partners</h2>
-
-<div class="cards">
-
-<div class="card"><h3>Rockwell Automation</h3></div>
-<div class="card"><h3>Schneider Electric</h3></div>
-<div class="card"><h3>Omron</h3></div>
-<div class="card"><h3>Phoenix Contact</h3></div>
-
+<div class="grid">
+<div class="card">Rockwell Automation</div>
+<div class="card">Schneider Electric</div>
+<div class="card">Omron</div>
+<div class="card">Phoenix Contact</div>
 </div>
 
 </section>
 
-<section>
+<section id="contact" class="section">
+<h2>Contact Us</h2>
 
-<h2 class="section-title">Why Choose Us</h2>
-
-<ul>
-
-<li>✔ Complete Automation & Instrumentation Solutions</li>
-<li>✔ Reliable Engineering & Technical Support</li>
-<li>✔ Customized Electrical Control Panels</li>
-<li>✔ Smart Factory Automation Solutions</li>
-<li>✔ Energy Efficient Systems</li>
-<li>✔ End-to-End Project Execution</li>
-<li>✔ Industrial Networking Solutions</li>
-<li>✔ Long-Term Technical Support</li>
-
-</ul>
-
-</section>
-
-<section class="dark">
-
-<h2 class="section-title">Contact Us</h2>
-
-<div class="contact">
-
-<p><strong>P.S. Chauhan</strong></p>
-
+<p><b>P.S. Chauhan</b></p>
 <p>📞 +91 9650389001</p>
-
 <p>📧 info@controlnestautomation.in</p>
-
-<p>GSTIN : 06KNUPS2346C1ZJ</p>
+<p>GSTIN: 06KNUPS2346C1ZJ</p>
 
 <p>
-📍 H.No.35, Gali No.5,<br>
-Sant Surdas Nagar,<br>
-Mirzapur Sector-74,<br>
+H.No.35, Gali No.5,
+Sant Surdas Nagar,
+Mirzapur Sector-74,
 Faridabad, Haryana - 121004
 </p>
-
-</div>
 
 </section>
 
 <footer>
-
-© 2026 ControlNest Automation | Industrial Automation Solutions
-
+© 2026 ControlNest Automation
 </footer>
 
-<a class="whatsapp" href="https://wa.me/919650389001">☎</a>
-
-</body>
-</html>
+<a href="https://wa.me/919650389001"
+style="position:fixed;right:20px;bottom:20px;background:#25D366;
+color:white;padding:18px;border-radius:50%;text-decoration:none;font-size:28px;">
+💬
+</a>
